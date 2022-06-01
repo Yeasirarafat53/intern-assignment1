@@ -1,0 +1,195 @@
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* =======navbar section======== */
+
+.navbar-nav,
+span,
+a {
+  font-size: 20px;
+}
+.nav-item .nav-link {
+  color: black;
+  margin: 15px;
+}
+.login::after {
+  content: '';
+  height: 20px;
+  padding-right: 8px;
+  border-right: 2px solid black;
+}
+
+/* ========Card Section========== */
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 1.5rem;
+  background-color: #000;
+}
+
+.swiper-pagination-bullet-active {
+  width: 30px;
+}
+
+.cart {
+  position: fixed;
+}
+.card-section {
+  position: relative;
+  border: 1px solid black;
+  padding: 2rem;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  margin-top: 5rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.card-section::before {
+  position: absolute;
+  content: 'Digital Card Details';
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+  width: 110%;
+  height: 15rem;
+  color: #eee;
+  background-image: url('./images/Background.jpg');
+  top: -70px;
+  border-radius: 40px;
+  z-index: -1;
+}
+
+.btn {
+  border-radius: 40px;
+}
+
+/* =======feature section========= */
+
+.feature {
+  padding: 70px;
+  max-width: 90%;
+  border: 1px solid black;
+  border-radius: 40px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.feature .feature-box {
+  text-align: center;
+}
+
+.icon {
+  font-size: 90px;
+  border-radius: 50%;
+  background-color: #f8f5f5;
+  filter: blur(20px);
+}
+
+/* =======Responsive section======= */
+
+@media screen and (max-width: 531px) {
+  .second-half {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+  }
+  .first-half {
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .four {
+    order: 1;
+  }
+  .two {
+    order: 2;
+  }
+  .three {
+    order: 4;
+  }
+  .one {
+    order: 3;
+  }
+
+  .btn {
+    margin-bottom: 30px;
+  }
+  .price {
+    margin-bottom: 30px;
+  }
+  .login::after {
+    border-right: none;
+  }
+  .navbar-text {
+    text-align: center;
+  }
+  .nav-item .nav-link {
+    color: black;
+    margin: 0;
+    text-align: center;
+  }
+  .navbar-brand {
+    margin-right: 18%;
+  }
+  .card-section {
+    margin-top: 12rem;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    backdrop-filter: blur(10px);
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    z-index: 999;
+  }
+
+  .feature .feature-box {
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+  }
+
+  .feature .feature-box .icon {
+    padding-right: 50px;
+  }
+}
